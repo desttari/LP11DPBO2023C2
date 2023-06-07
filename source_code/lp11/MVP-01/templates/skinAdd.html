@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <title>LP11 2100506</title>
+
+    <style>
+      body {
+        background-color: #f8f9fa;
+      }
+
+      h3 {
+        margin-bottom: 10px;
+      }
+
+      .form-control {
+        width: 100%;
+      }
+
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="../index.php">WIW</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </nav>
+
+    <br />
+    <br />
+
+    <div class="container">
+      <br />
+
+      <!-- Form -->
+      <div>
+        <div class="text-center">
+          <h3>TAMBAH DATA PASIEN</h3>
+        </div>
+
+        <!-- Form -->
+        <form action="../view/TambahPasien.php" method="POST">
+          <div class="form-group">
+            <label for="nikInput">NIK</label>
+            <input
+              type="text"
+              class="form-control"
+              id="nikInput"
+              name="nikInput"
+              placeholder="Enter NIK"
+            />
+          </div>
+          <div class="form-group">
+            <label for="namaInput">Nama</label>
+            <input
+              type="text"
+              class="form-control"
+              id="namaInput"
+              name="namaInput"
+              placeholder="Enter Nama"
+            />
+          </div>
+          <div class="form-group">
+            <label for="tempatInput">Tempat</label>
+            <input
+              type="text"
+              class="form-control"
+              id="tempatInput"
+              name="tempatInput"
+              placeholder="Enter Tempat"
+            />
+          </div>
+          <div class="form-group">
+            <label for="tglLahirInput">Tanggal Lahir</label>
+            <input
+              type="date"
+              class="form-control"
+              id="tglLahirInput"
+              name="tglLahirInput"
+            />
+          </div>
+          <div class="form-group">
+            <label for="genderInput">Gender</label>
+            <select class="form-control" id="genderInput" name="genderInput">
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="teleponInput">Telepon</label>
+            <input
+              type="text"
+              class="form-control"
+              id="teleponInput"
+              name="teleponInput"
+              placeholder="Enter Telepon"
+            />
+          </div>
+          <div class="form-group">
+            <label for="emailInput">E-mail</label>
+            <input
+              type="email"
+              class="form-control"
+              id="emailInput"
+              name="emailInput"
+              placeholder="Enter E-mail"
+            />
+          </div>
+          <div class="text-center">
+            <button type="submit" name="addBtn" class="btn btn-dark">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  </body>
+</html>
